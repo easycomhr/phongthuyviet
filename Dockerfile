@@ -24,6 +24,7 @@ RUN apk add --no-cache \
     bash \
     git \
     unzip \
+    netcat-openbsd \
     libzip-dev \
     oniguruma-dev \
     icu-dev \
@@ -62,22 +63,36 @@ COPY docker/nginx.conf /etc/nginx/http.d/default.conf
 COPY <<'EOF' /etc/supervisord.conf
 [supervisord]
 nodaemon=true
+logfile=/dev/null
+logfile_maxbytes=0
 
 [program:php-fpm]
 command=php-fpm -F
 priority=10
 autorestart=true
+stdout_logfile=/dev/stdout
+stdout_logfile_maxbytes=0
+stderr_logfile=/dev/stderr
+stderr_logfile_maxbytes=0
 
 [program:nginx]
-command=nginx -g "daemon off;"
+command=/bin/sh -c "until nc -z 127.0.0.1 9000; do sleep 0.1; done && nginx -g 'daemon off;'"
 priority=20
 autorestart=true
+stdout_logfile=/dev/stdout
+stdout_logfile_maxbytes=0
+stderr_logfile=/dev/stderr
+stderr_logfile_maxbytes=0
 
 [program:queue]
 command=php /var/www/html/artisan queue:work --sleep=3 --tries=3 --max-time=3600
 priority=30
 autorestart=true
 user=www-data
+stdout_logfile=/dev/stdout
+stdout_logfile_maxbytes=0
+stderr_logfile=/dev/stderr
+stderr_logfile_maxbytes=0
 EOF
 
 COPY <<'EOF' /entrypoint.sh
