@@ -110,6 +110,9 @@ EOF
 
 RUN chmod +x /entrypoint.sh
 
+HEALTHCHECK --interval=10s --timeout=5s --start-period=30s --retries=3 \
+  CMD nc -z localhost 80 || exit 1
+
 EXPOSE 80
 
 CMD ["/entrypoint.sh"]
