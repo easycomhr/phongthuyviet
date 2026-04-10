@@ -56,7 +56,8 @@ RUN php artisan key:generate --force || true
 RUN php artisan storage:link || true
 
 RUN chown -R www-data:www-data /var/www/html \
-    && chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache
+    && chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache \
+    && chmod -R 777 /var/www/html/storage/logs /var/www/html/storage/framework
 
 COPY docker/nginx.conf /etc/nginx/http.d/default.conf
 
@@ -99,7 +100,6 @@ COPY <<'EOF' /entrypoint.sh
 #!/bin/sh
 php artisan migrate --force || echo "[WARN] migrate failed, continuing"
 php artisan config:clear || true
-php artisan db:seed --force || echo "[WARN] seed failed, continuing"
 exec /usr/bin/supervisord -c /etc/supervisord.conf
 EOF
 
