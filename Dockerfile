@@ -1,9 +1,18 @@
+# Stage 1: Install PHP vendor (needed by Vite for Ziggy)
+FROM composer:2 AS vendor
+
+WORKDIR /app
+COPY composer.json composer.lock ./
+RUN composer install --no-dev --optimize-autoloader --no-interaction --ignore-platform-reqs
+
+# Stage 2: Build frontend assets
 FROM node:20-alpine AS frontend
 
 WORKDIR /app
 COPY package*.json ./
 RUN npm ci --prefer-offline
 COPY . .
+COPY --from=vendor /app/vendor ./vendor
 RUN npm run build
 
 FROM php:8.3-fpm-alpine
