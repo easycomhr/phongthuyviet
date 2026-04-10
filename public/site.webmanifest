@@ -1,0 +1,17 @@
+{
+  "name": "Phong Thủy Việt",
+  "short_name": "Phong Thủy",
+  "description": "Tra cứu phong thủy chuẩn Việt – Lịch Vạn Niên & Văn Khấn",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#111110",
+  "theme_color": "#C9A84C",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Phong Thủy Việt - Tra ngày tốt xấu, Văn khấn, Lịch vạn niên cho người Việt">
+  <title>Phong Thủy Việt – Tra Ngày Tốt & Văn Khấn</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<header>
+  <div class="header-inner">
+    <div class="logo" onclick="showSection('home')">
+      <div class="logo-icon">🪔</div>
+      <div class="logo-text">
+        <span class="logo-main">Phong Thủy Việt</span>
+        <span class="logo-sub">Lịch Vạn Niên & Văn Khấn</span>
+      </div>
+    </div>
+
+    <button class="hamburger" onclick="toggleMobileMenu()">☰</button>
+
+    <nav id="nav-menu">
+      <a class="nav-link" data-section="home">🏠 Trang Chủ</a>
+      <a class="nav-link" data-section="tra-ngay">📅 Tra Ngày Tốt</a>
+      <a class="nav-link" data-section="van-khan">📜 Văn Khấn</a>
+      <a class="nav-link" data-section="lich-hom-nay">🌙 Lịch Hôm Nay</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===================== MAIN ===================== -->
+<main>
+
+  <!-- =========== HOME =========== -->
+  <section id="home" class="section">
+
+    <!-- Hero: ngày hôm nay -->
+    <div class="hero">
+      <div class="hero-inner">
+        <div class="hero-tag">✨ Lịch Vạn Niên Việt Nam</div>
+        <h1>Phong Thủy Việt</h1>
+        <p class="hero-desc">Tra ngày tốt xấu, lịch âm dương, văn khấn truyền thống – nhanh chóng, chính xác, dễ dùng.</p>
+        <div id="hero-date">
+          <div class="hero-solar">Đang tải thông tin ngày hôm nay...</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <!-- Tra nhanh -->
+      <div class="home-quick">
+        <div class="section-title">
+          <h2>📅 Tra Ngày Nhanh</h2>
+          <p>Chọn loại sự kiện để xem ngày tốt trong tháng này</p>
+        </div>
+        <div class="quick-grid">
+          <div class="quick-card" onclick="quickLookup('cuoi-hoi')">
+            <div class="quick-icon">💍</div>
+            <div class="quick-label">Cưới hỏi</div>
+          </div>
+          <div class="quick-card" onclick="quickLookup('khoi-cong')">
+            <div class="quick-icon">🏗️</div>
+            <div class="quick-label">Khởi công<br>Xây nhà</div>
+          </div>
+          <div class="quick-card" onclick="quickLookup('nhap-trach')">
+            <div class="quick-icon">🏠</div>
+            <div class="quick-label">Nhập trạch</div>
+          </div>
+          <div class="quick-card" onclick="quickLookup('khai-truong')">
+            <div class="quick-icon">🎊</div>
+            <div class="quick-label">Khai trương</div>
+          </div>
+          <div class="quick-card" onclick="quickLookup('xuat-hanh')">
+            <div class="quick-icon">✈️</div>
+            <div class="quick-label">Xuất hành</div>
+          </div>
+          <div class="quick-card" onclick="quickLookup('ky-ket')">
+            <div class="quick-icon">📝</div>
+            <div class="quick-label">Ký kết<br>Hợp đồng</div>
+          </div>
+          <div class="quick-card" onclick="quickLookup('ma-chay')">
+            <div class="quick-icon">🕯️</div>
+            <div class="quick-label">Ma chay<br>Tang lễ</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lịch hôm nay chi tiết -->
+      <div class="home-today">
+        <div class="section-title">
+          <h2>🌙 Lịch Hôm Nay Chi Tiết</h2>
+          <p>Thông tin Can Chi, Trực và Giờ Hoàng Đạo ngày hôm nay</p>
+        </div>
+        <div class="today-card">
+          <h3>📊 Chi tiết ngày hôm nay</h3>
+          <div id="today-detail">Đang tải...</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========== TRA NGÀY TỐT =========== -->
+  <section id="tra-ngay" class="section">
+    <div class="container">
+      <div class="tra-ngay-section">
+        <div class="section-title">
+          <h2>📅 Tra Ngày Tốt Xấu</h2>
+          <p>Chọn loại sự kiện và tháng để xem lịch ngày tốt, ngày xấu</p>
+        </div>
+
+        <!-- Controls -->
+        <div class="cal-controls">
+          <label for="event-select">Loại sự kiện:</label>
+          <select id="event-select" class="form-select">
+            <option value="cuoi-hoi">💍 Cưới hỏi</option>
+            <option value="khoi-cong" selected>🏗️ Khởi công / Xây nhà</option>
+            <option value="nhap-trach">🏠 Nhập trạch</option>
+            <option value="khai-truong">🎊 Khai trương</option>
+            <option value="xuat-hanh">✈️ Xuất hành</option>
+            <option value="ky-ket">📝 Ký kết hợp đồng</option>
+            <option value="ma-chay">🕯️ Ma chay / Tang lễ</option>
+          </select>
+
+          <label for="cal-month">Tháng:</label>
+          <select id="cal-month" class="form-select">
+            <option value="1">Tháng 1</option>
+            <option value="2">Tháng 2</option>
+            <option value="3">Tháng 3</option>
+            <option value="4">Tháng 4</option>
+            <option value="5">Tháng 5</option>
+            <option value="6">Tháng 6</option>
+            <option value="7">Tháng 7</option>
+            <option value="8">Tháng 8</option>
+            <option value="9">Tháng 9</option>
+            <option value="10">Tháng 10</option>
+            <option value="11">Tháng 11</option>
+            <option value="12">Tháng 12</option>
+          </select>
+
+          <label for="cal-year">Năm:</label>
+          <select id="cal-year" class="form-select"></select>
+
+          <div class="legend">
+            <div class="legend-item"><div class="legend-dot good"></div> Ngày tốt</div>
+            <div class="legend-item"><div class="legend-dot neutral"></div> Bình thường</div>
+            <div class="legend-item"><div class="legend-dot bad"></div> Ngày xấu</div>
+          </div>
+        </div>
+
+        <!-- Calendar -->
+        <div class="calendar-wrapper">
+          <div class="cal-nav">
+            <button class="cal-nav-btn" onclick="prevMonth()">‹</button>
+            <span id="cal-title">Tháng 1 năm 2025</span>
+            <button class="cal-nav-btn" onclick="nextMonth()">›</button>
+          </div>
+          <div class="cal-weekdays">
+            <div class="cal-weekday">CN</div>
+            <div class="cal-weekday">T2</div>
+            <div class="cal-weekday">T3</div>
+            <div class="cal-weekday">T4</div>
+            <div class="cal-weekday">T5</div>
+            <div class="cal-weekday">T6</div>
+            <div class="cal-weekday">T7</div>
+          </div>
+          <div id="cal-body"></div>
+        </div>
+
+        <!-- Day detail -->
+        <div id="day-detail-panel"></div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========== VĂN KHẤN =========== -->
+  <section id="van-khan" class="section">
+    <div class="container">
+      <div class="prayer-section">
+        <div class="section-title">
+          <h2>📜 Văn Khấn Truyền Thống</h2>
+          <p>Các bài văn khấn đầy đủ cho mọi nghi lễ quan trọng</p>
+        </div>
+
+        <!-- List view -->
+        <div id="prayer-list-view">
+          <div id="prayer-list"></div>
+        </div>
+
+        <!-- Detail view -->
+        <div id="prayer-detail-view" class="hidden">
+          <div id="prayer-detail"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========== LỊCH HÔM NAY =========== -->
+  <section id="lich-hom-nay" class="section">
+    <div class="container">
+      <div class="lich-section">
+        <div class="section-title">
+          <h2>🌙 Lịch Hôm Nay</h2>
+          <p>Thông tin chi tiết về ngày âm dương hôm nay</p>
+        </div>
+        <div class="today-card">
+          <h3>📊 Thông tin đầy đủ ngày hôm nay</h3>
+          <div id="today-detail-full">Đang tải...</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <p><strong>Phong Thủy Việt</strong> – Lịch Vạn Niên & Văn Khấn Truyền Thống</p>
+  <p>Thông tin mang tính tham khảo theo quan niệm dân gian Việt Nam. Lịch âm dương được tính theo múi giờ Việt Nam (UTC+7).</p>
+</footer>
+
+<!-- ===================== SCRIPTS ===================== -->
+<script src="assets/js/lunar.js"></script>
+<script src="assets/js/almanac.js"></script>
+<script src="assets/js/prayer.js"></script>
+<script src="assets/js/app.js"></script>
+
+
+</body>
+</html>
