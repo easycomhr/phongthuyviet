@@ -98,10 +98,13 @@ EOF
 
 COPY <<'EOF' /entrypoint.sh
 #!/bin/sh
-php artisan migrate --force || echo "[WARN] migrate failed, continuing"
-php artisan config:clear || true
-# Fix permissions after artisan commands run as root
+# Fix permissions first so queue worker (www-data) can write logs immediately
 chmod -R 777 /var/www/html/storage/logs /var/www/html/storage/framework
+
+# Run migration in background so supervisord (php-fpm + nginx) starts immediately
+# This prevents 502 Bad Gateway caused by php-fpm not ready during DB connection timeout
+(sleep 5 && php artisan migrate --force && php artisan config:cache || echo "[WARN] migrate/cache failed, continuing") &
+
 exec /usr/bin/supervisord -c /etc/supervisord.conf
 EOF
 
