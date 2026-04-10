@@ -3,7 +3,7 @@
         <SeoHead
             title="Xem Tuổi Hợp – Tính Tuổi Vợ Chồng Theo Phong Thủy"
             description="Xem tuổi hợp theo phong thủy Việt Nam. Tính cung mệnh, quái số, xem vợ chồng hợp hay không, xem tuổi xây nhà và kinh doanh."
-            canonical="https://phongthuyviet.vn/xem-tuoi"
+            canonical="https://phongthuyviet.easycom.tech/xem-tuoi"
         />
         <section class="page-hero relative overflow-hidden">
             <div class="hero-noise absolute inset-0 pointer-events-none" aria-hidden="true"></div>

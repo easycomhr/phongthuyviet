@@ -3,7 +3,7 @@
         <SeoHead
             title="Đặt Tên Cho Con Theo Phong Thủy – Tên Đẹp Hợp Mệnh"
             description="Gợi ý tên đặt cho con theo ngũ hành và phong thủy Việt Nam. Nhập ngày sinh bé để nhận danh sách tên đẹp, hợp mệnh và ý nghĩa."
-            canonical="https://phongthuyviet.vn/dat-ten-cho-con"
+            canonical="https://phongthuyviet.easycom.tech/dat-ten-cho-con"
         />
         <section class="page-hero relative overflow-hidden">
             <div class="hero-noise absolute inset-0 pointer-events-none" aria-hidden="true"></div>

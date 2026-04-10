@@ -3,7 +3,7 @@
         <SeoHead
             title="Lịch Hôm Nay – Lịch Âm Dương"
             description="Xem lịch hôm nay theo âm dương lịch Việt Nam. Giờ hoàng đạo, ngày tốt xấu, tiết khí và các thông tin phong thủy hữu ích."
-            canonical="https://phongthuyviet.vn/lich-hom-nay"
+            canonical="https://phongthuyviet.easycom.tech/lich-hom-nay"
         />
         <section class="page-hero relative overflow-hidden">
             <div class="hero-noise absolute inset-0 pointer-events-none" aria-hidden="true"></div>

@@ -3,7 +3,7 @@
         <SeoHead
             title="Xem Tử Vi – Lá Số Tử Vi Theo Ngày Sinh"
             description="Xem lá số tử vi theo ngày sinh, giờ sinh và giới tính. Phân tích cung mệnh, cung tài lộc, hôn nhân và vận hạn theo tử vi Việt Nam."
-            canonical="https://phongthuyviet.vn/tu-vi"
+            canonical="https://phongthuyviet.easycom.tech/tu-vi"
         />
         <section class="page-hero relative overflow-hidden">
             <div class="hero-noise absolute inset-0 pointer-events-none" aria-hidden="true"></div>
