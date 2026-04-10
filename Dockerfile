@@ -100,6 +100,8 @@ COPY <<'EOF' /entrypoint.sh
 #!/bin/sh
 php artisan migrate --force || echo "[WARN] migrate failed, continuing"
 php artisan config:clear || true
+# Fix permissions after artisan commands run as root
+chmod -R 777 /var/www/html/storage/logs /var/www/html/storage/framework
 exec /usr/bin/supervisord -c /etc/supervisord.conf
 EOF
 
