@@ -76,7 +76,7 @@ stderr_logfile=/dev/stderr
 stderr_logfile_maxbytes=0
 
 [program:nginx]
-command=/bin/sh -c "until nc -z 127.0.0.1 9000; do sleep 0.1; done && nginx -g 'daemon off;'"
+command=nginx -g "daemon off;"
 priority=20
 autorestart=true
 stdout_logfile=/dev/stdout
@@ -97,9 +97,9 @@ EOF
 
 COPY <<'EOF' /entrypoint.sh
 #!/bin/sh
-set -e
-php artisan migrate --force
-php artisan config:clear
+php artisan migrate --force || echo "[WARN] migrate failed, continuing"
+php artisan config:clear || true
+php artisan db:seed --force || echo "[WARN] seed failed, continuing"
 exec /usr/bin/supervisord -c /etc/supervisord.conf
 EOF
 
