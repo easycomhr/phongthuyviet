@@ -3,7 +3,7 @@
         <SeoHead
             title="Văn Khấn Chuẩn – Văn Khấn Theo Phong Tục Việt"
             description="Tổng hợp văn khấn chuẩn theo phong tục Việt Nam. Văn khấn thần tài, văn khấn gia tiên, văn khấn ngày rằm mùng một và các dịp lễ tết."
-            canonical="https://phongthuyviet.easycom.tech/van-khan"
+            canonical="https://phongthuyviet.easycomhr.tech/van-khan"
         />
         <section class="page-hero relative overflow-hidden no-print">
             <div class="hero-noise absolute inset-0 pointer-events-none" aria-hidden="true"></div>

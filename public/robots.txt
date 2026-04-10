@@ -3,4 +3,4 @@ Allow: /
 Disallow: /storage/
 Disallow: /vendor/
 
-Sitemap: https://phongthuyviet.easycom.tech/sitemap.xml
+Sitemap: https://phongthuyviet.easycomhr.tech/sitemap.xml

@@ -3,7 +3,7 @@
         <SeoHead
             title="Chọn Ngày Cưới Đẹp Theo Phong Thủy 2025"
             description="Tìm ngày cưới đẹp, hợp tuổi đôi uyên ương theo phong thủy Việt Nam. Tra ngày tốt để tổ chức hôn lễ, tránh ngày xấu và giờ hung."
-            canonical="https://phongthuyviet.easycom.tech/ngay-cuoi"
+            canonical="https://phongthuyviet.easycomhr.tech/ngay-cuoi"
         />
         <section class="page-hero relative overflow-hidden">
             <div class="hero-noise absolute inset-0 pointer-events-none" aria-hidden="true"></div>

@@ -3,7 +3,7 @@
         <SeoHead
             :title="prayer.title"
             :description="`Đọc và in văn khấn ${prayer.title} chuẩn theo phong tục Việt Nam. Văn khấn đầy đủ, dễ đọc, có thể lưu PDF.`"
-            :canonical="`https://phongthuyviet.easycom.tech/van-khan/${prayer.slug}`"
+            :canonical="`https://phongthuyviet.easycomhr.tech/van-khan/${prayer.slug}`"
             :schema="prayerSchema"
         />
         <section class="page-hero relative overflow-hidden no-print">
@@ -138,12 +138,12 @@ const prayerSchema = computed(() => ({
     '@type': 'Article',
     headline: props.prayer.title,
     description: `Văn khấn ${props.prayer.title} chuẩn theo phong tục Việt Nam.`,
-    url: `https://phongthuyviet.easycom.tech/van-khan/${props.prayer.slug}`,
+    url: `https://phongthuyviet.easycomhr.tech/van-khan/${props.prayer.slug}`,
     inLanguage: 'vi',
     publisher: {
         '@type': 'Organization',
         name: 'Phong Thủy Việt',
-        url: 'https://phongthuyviet.easycom.tech',
+        url: 'https://phongthuyviet.easycomhr.tech',
     },
 }));
 

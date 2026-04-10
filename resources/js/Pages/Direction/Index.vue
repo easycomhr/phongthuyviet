@@ -3,7 +3,7 @@
         <SeoHead
             title="Xem Hướng Nhà Hợp Tuổi Theo Phong Thủy"
             description="Tính hướng nhà hợp tuổi theo phong thủy Bát Trạch. Nhập năm sinh và giới tính để xem hướng tốt, hướng xấu cần tránh."
-            canonical="https://phongthuyviet.easycom.tech/huong-nha"
+            canonical="https://phongthuyviet.easycomhr.tech/huong-nha"
         />
         <section class="page-hero relative overflow-hidden">
             <div class="hero-noise absolute inset-0 pointer-events-none" aria-hidden="true"></div>

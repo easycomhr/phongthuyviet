@@ -3,7 +3,7 @@
         <SeoHead
             title="Tra Cứu Ngày Tốt Xấu 2025"
             description="Tra cứu ngày tốt xấu theo phong thủy Việt Nam. Chọn loại việc, nhập ngày âm dương để xem giờ hoàng đạo, ngày đẹp phù hợp."
-            canonical="https://phongthuyviet.easycom.tech/tra-cuu-ngay-tot"
+            canonical="https://phongthuyviet.easycomhr.tech/tra-cuu-ngay-tot"
         />
         <section class="page-hero relative overflow-hidden">
             <div class="hero-noise absolute inset-0 pointer-events-none" aria-hidden="true"></div>
