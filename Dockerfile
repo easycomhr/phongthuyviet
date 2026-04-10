@@ -1,3 +1,11 @@
+FROM node:20-alpine AS frontend
+
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci --prefer-offline
+COPY . .
+RUN npm run build
+
 FROM php:8.3-fpm-alpine
 
 RUN apk add --no-cache \
@@ -27,10 +35,13 @@ COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 WORKDIR /var/www/html
 
 COPY . .
+COPY --from=frontend /app/public/build ./public/build
 
 RUN composer install --no-dev --optimize-autoloader --no-interaction
 
 RUN cp .env.example .env || true
+
+RUN php artisan key:generate --force || true
 
 RUN php artisan storage:link || true
 
