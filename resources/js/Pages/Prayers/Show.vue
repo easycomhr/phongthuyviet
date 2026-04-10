@@ -1,5 +1,11 @@
 <template>
     <AppLayout>
+        <SeoHead
+            :title="prayer.title"
+            :description="`Đọc và in văn khấn ${prayer.title} chuẩn theo phong tục Việt Nam. Văn khấn đầy đủ, dễ đọc, có thể lưu PDF.`"
+            :canonical="`https://phongthuyviet.vn/van-khan/${prayer.slug}`"
+            :schema="prayerSchema"
+        />
         <section class="page-hero relative overflow-hidden no-print">
             <div class="hero-noise absolute inset-0 pointer-events-none" aria-hidden="true"></div>
             <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-9 text-center">
@@ -97,6 +103,7 @@
 
 <script setup>
 import AppLayout from '@/Layouts/AppLayout.vue';
+import SeoHead from '@/Components/SeoHead.vue';
 import { computed, onMounted, ref, watch } from 'vue';
 
 const STORAGE_KEY_FONT_SIZE = 'prayer_reader_font_size';
@@ -125,6 +132,20 @@ const articleThemeClass = computed(() => {
     if (theme.value === 'dark') return 'theme-dark';
     return 'theme-light';
 });
+
+const prayerSchema = computed(() => ({
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: props.prayer.title,
+    description: `Văn khấn ${props.prayer.title} chuẩn theo phong tục Việt Nam.`,
+    url: `https://phongthuyviet.vn/van-khan/${props.prayer.slug}`,
+    inLanguage: 'vi',
+    publisher: {
+        '@type': 'Organization',
+        name: 'Phong Thủy Việt',
+        url: 'https://phongthuyviet.vn',
+    },
+}));
 
 const themeLabel = computed(() => {
     if (theme.value === 'sepia') return 'Giấy úa';

@@ -1,5 +1,10 @@
 <template>
     <AppLayout>
+        <SeoHead
+            title="Chọn Ngày Cưới Đẹp Theo Phong Thủy 2025"
+            description="Tìm ngày cưới đẹp, hợp tuổi đôi uyên ương theo phong thủy Việt Nam. Tra ngày tốt để tổ chức hôn lễ, tránh ngày xấu và giờ hung."
+            canonical="https://phongthuyviet.vn/ngay-cuoi"
+        />
         <section class="page-hero relative overflow-hidden">
             <div class="hero-noise absolute inset-0 pointer-events-none" aria-hidden="true"></div>
             <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-9 text-center">
@@ -201,6 +206,7 @@ import { computed } from 'vue';
 import { useForm } from '@inertiajs/vue3';
 import AppLayout from '@/Layouts/AppLayout.vue';
 import LunarSolarDatePicker from '@/Components/LunarSolarDatePicker.vue';
+import SeoHead from '@/Components/SeoHead.vue';
 
 const props = defineProps({
     defaults: {

@@ -1,5 +1,10 @@
 <template>
     <AppLayout>
+        <SeoHead
+            title="Xem Hướng Nhà Hợp Tuổi Theo Phong Thủy"
+            description="Tính hướng nhà hợp tuổi theo phong thủy Bát Trạch. Nhập năm sinh và giới tính để xem hướng tốt, hướng xấu cần tránh."
+            canonical="https://phongthuyviet.vn/huong-nha"
+        />
         <section class="page-hero relative overflow-hidden">
             <div class="hero-noise absolute inset-0 pointer-events-none" aria-hidden="true"></div>
             <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-9 text-center">
@@ -181,6 +186,7 @@ import { ref } from 'vue';
 import { useForm } from '@inertiajs/vue3';
 import AppLayout from '@/Layouts/AppLayout.vue';
 import LunarSolarDatePicker from '@/Components/LunarSolarDatePicker.vue';
+import SeoHead from '@/Components/SeoHead.vue';
 
 const props = defineProps({
     defaults: {

@@ -1,5 +1,11 @@
 <template>
     <AppLayout>
+        <SeoHead
+            title="Tra Cứu Phong Thủy Chuẩn Việt"
+            description="Tra cứu phong thủy chuẩn Việt – Lịch âm dương, ngày tốt xấu, xem tuổi hợp, hướng nhà, tử vi, văn khấn và đặt tên cho con."
+            canonical="https://phongthuyviet.vn"
+            :schema="websiteSchema"
+        />
         <section class="home-hero relative overflow-hidden">
             <div class="hero-noise absolute inset-0 pointer-events-none" aria-hidden="true"></div>
             <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
@@ -144,7 +150,25 @@
 <script setup>
 import AppLayout from '@/Layouts/AppLayout.vue';
 import LunarSolarDatePicker from '@/Components/LunarSolarDatePicker.vue';
+import SeoHead from '@/Components/SeoHead.vue';
 import { useForm } from '@inertiajs/vue3';
+
+const websiteSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Phong Thủy Việt',
+    url: 'https://phongthuyviet.vn',
+    description: 'Tra cứu phong thủy chuẩn Việt – Lịch âm dương, ngày tốt xấu, xem tuổi hợp, hướng nhà, tử vi, văn khấn.',
+    inLanguage: 'vi',
+    potentialAction: {
+        '@type': 'SearchAction',
+        target: {
+            '@type': 'EntryPoint',
+            urlTemplate: 'https://phongthuyviet.vn/tra-cuu-ngay-tot?date={search_term_string}',
+        },
+        'query-input': 'required name=search_term_string',
+    },
+};
 
 const props = defineProps({
     categories: {

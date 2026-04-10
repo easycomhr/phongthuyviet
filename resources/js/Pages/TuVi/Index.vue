@@ -1,5 +1,10 @@
 <template>
     <AppLayout>
+        <SeoHead
+            title="Xem Tử Vi – Lá Số Tử Vi Theo Ngày Sinh"
+            description="Xem lá số tử vi theo ngày sinh, giờ sinh và giới tính. Phân tích cung mệnh, cung tài lộc, hôn nhân và vận hạn theo tử vi Việt Nam."
+            canonical="https://phongthuyviet.vn/tu-vi"
+        />
         <section class="page-hero relative overflow-hidden">
             <div class="hero-noise absolute inset-0 pointer-events-none" aria-hidden="true"></div>
             <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-9 text-center">
@@ -115,6 +120,7 @@
 <script setup>
 import { ref } from 'vue';
 import { useForm } from '@inertiajs/vue3';
+import SeoHead from '@/Components/SeoHead.vue';
 import AppLayout from '@/Layouts/AppLayout.vue';
 import LunarSolarDatePicker from '@/Components/LunarSolarDatePicker.vue';
 import TuViPalaceBoard from '@/Components/TuViPalaceBoard.vue';

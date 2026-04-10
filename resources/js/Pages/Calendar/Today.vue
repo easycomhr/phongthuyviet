@@ -1,5 +1,10 @@
 <template>
     <AppLayout>
+        <SeoHead
+            title="Lịch Hôm Nay – Lịch Âm Dương"
+            description="Xem lịch hôm nay theo âm dương lịch Việt Nam. Giờ hoàng đạo, ngày tốt xấu, tiết khí và các thông tin phong thủy hữu ích."
+            canonical="https://phongthuyviet.vn/lich-hom-nay"
+        />
         <section class="page-hero relative overflow-hidden">
             <div class="hero-noise absolute inset-0 pointer-events-none" aria-hidden="true"></div>
             <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-9">
@@ -159,6 +164,7 @@
 
 <script setup>
 import AppLayout from '@/Layouts/AppLayout.vue';
+import SeoHead from '@/Components/SeoHead.vue';
 import { router } from '@inertiajs/vue3';
 
 const props = defineProps({

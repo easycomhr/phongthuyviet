@@ -1,5 +1,10 @@
 <template>
     <AppLayout>
+        <SeoHead
+            title="Văn Khấn Chuẩn – Văn Khấn Theo Phong Tục Việt"
+            description="Tổng hợp văn khấn chuẩn theo phong tục Việt Nam. Văn khấn thần tài, văn khấn gia tiên, văn khấn ngày rằm mùng một và các dịp lễ tết."
+            canonical="https://phongthuyviet.vn/van-khan"
+        />
         <section class="page-hero relative overflow-hidden no-print">
             <div class="hero-noise absolute inset-0 pointer-events-none" aria-hidden="true"></div>
             <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-9 text-center">
@@ -119,6 +124,7 @@
 
 <script setup>
 import AppLayout from '@/Layouts/AppLayout.vue';
+import SeoHead from '@/Components/SeoHead.vue';
 import { computed, ref, watch } from 'vue';
 import { router } from '@inertiajs/vue3';
 

@@ -1,5 +1,10 @@
 <template>
     <AppLayout>
+        <SeoHead
+            title="Đặt Tên Cho Con Theo Phong Thủy – Tên Đẹp Hợp Mệnh"
+            description="Gợi ý tên đặt cho con theo ngũ hành và phong thủy Việt Nam. Nhập ngày sinh bé để nhận danh sách tên đẹp, hợp mệnh và ý nghĩa."
+            canonical="https://phongthuyviet.vn/dat-ten-cho-con"
+        />
         <section class="page-hero relative overflow-hidden">
             <div class="hero-noise absolute inset-0 pointer-events-none" aria-hidden="true"></div>
             <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-9 text-center">
@@ -131,6 +136,7 @@
 import { computed, ref, watch } from 'vue';
 import { useForm } from '@inertiajs/vue3';
 import AppLayout from '@/Layouts/AppLayout.vue';
+import SeoHead from '@/Components/SeoHead.vue';
 
 const props = defineProps({
     defaults: { type: Object, default: () => ({}) },

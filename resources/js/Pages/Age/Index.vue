@@ -1,5 +1,10 @@
 <template>
     <AppLayout>
+        <SeoHead
+            title="Xem Tuổi Hợp – Tính Tuổi Vợ Chồng Theo Phong Thủy"
+            description="Xem tuổi hợp theo phong thủy Việt Nam. Tính cung mệnh, quái số, xem vợ chồng hợp hay không, xem tuổi xây nhà và kinh doanh."
+            canonical="https://phongthuyviet.vn/xem-tuoi"
+        />
         <section class="page-hero relative overflow-hidden">
             <div class="hero-noise absolute inset-0 pointer-events-none" aria-hidden="true"></div>
             <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-9 text-center">
@@ -101,6 +106,7 @@
 <script setup>
 import AppLayout from '@/Layouts/AppLayout.vue';
 import LunarSolarDatePicker from '@/Components/LunarSolarDatePicker.vue';
+import SeoHead from '@/Components/SeoHead.vue';
 import { useForm } from '@inertiajs/vue3';
 
 const props = defineProps({
