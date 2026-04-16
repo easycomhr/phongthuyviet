@@ -1,215 +1,275 @@
 {
+  "_AppLayout-CMzWDxoL.js": {
+    "file": "assets/AppLayout-CMzWDxoL.js",
+    "name": "AppLayout",
+    "imports": [
+      "resources/js/app.js"
+    ]
+  },
   "_LunarSolarDatePicker-Bimmp3kF.css": {
     "file": "assets/LunarSolarDatePicker-Bimmp3kF.css",
     "src": "_LunarSolarDatePicker-Bimmp3kF.css"
   },
-  "_LunarSolarDatePicker-IuqQ9OLq.js": {
-    "file": "assets/LunarSolarDatePicker-IuqQ9OLq.js",
+  "_LunarSolarDatePicker-BltjoF3H.js": {
+    "file": "assets/LunarSolarDatePicker-BltjoF3H.js",
     "name": "LunarSolarDatePicker",
     "imports": [
       "resources/js/app.js",
-      "__plugin-vue_export-helper-Bcf8XuLU.js"
+      "__plugin-vue_export-helper-DlAUqK2U.js"
     ],
     "css": [
       "assets/LunarSolarDatePicker-Bimmp3kF.css"
     ]
   },
-  "_SeoHead-Cgu0a67g.js": {
-    "file": "assets/SeoHead-Cgu0a67g.js",
+  "_SeoHead-CiZR7-Fx.js": {
+    "file": "assets/SeoHead-CiZR7-Fx.js",
     "name": "SeoHead",
     "imports": [
       "resources/js/app.js"
     ]
   },
-  "__plugin-vue_export-helper-Bcf8XuLU.js": {
-    "file": "assets/_plugin-vue_export-helper-Bcf8XuLU.js",
-    "name": "_plugin-vue_export-helper",
+  "__plugin-vue_export-helper-DlAUqK2U.js": {
+    "file": "assets/_plugin-vue_export-helper-DlAUqK2U.js",
+    "name": "_plugin-vue_export-helper"
+  },
+  "resources/js/Pages/Admin/Analytics/Index.vue": {
+    "file": "assets/Index-BGrLA_Gk.js",
+    "name": "Index",
+    "src": "resources/js/Pages/Admin/Analytics/Index.vue",
+    "isDynamicEntry": true,
     "imports": [
-      "resources/js/app.js"
+      "resources/js/app.js",
+      "_AppLayout-CMzWDxoL.js"
+    ]
+  },
+  "resources/js/Pages/Admin/Feedbacks/Index.vue": {
+    "file": "assets/Index-Dd_WZUDI.js",
+    "name": "Index",
+    "src": "resources/js/Pages/Admin/Feedbacks/Index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js",
+      "_AppLayout-CMzWDxoL.js"
     ]
   },
   "resources/js/Pages/Age/Index.vue": {
-    "file": "assets/Index-CuM_8KCx.js",
+    "file": "assets/Index-hE4w6gb-.js",
     "name": "Index",
     "src": "resources/js/Pages/Age/Index.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "__plugin-vue_export-helper-Bcf8XuLU.js",
-      "_LunarSolarDatePicker-IuqQ9OLq.js",
-      "_SeoHead-Cgu0a67g.js"
+      "_AppLayout-CMzWDxoL.js",
+      "_LunarSolarDatePicker-BltjoF3H.js",
+      "_SeoHead-CiZR7-Fx.js",
+      "__plugin-vue_export-helper-DlAUqK2U.js"
     ],
     "css": [
       "assets/Index-tn0RQdqM.css"
     ]
   },
   "resources/js/Pages/Age/Result.vue": {
-    "file": "assets/Result-JyTYfe-o.js",
+    "file": "assets/Result-w6tvZuEA.js",
     "name": "Result",
     "src": "resources/js/Pages/Age/Result.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "__plugin-vue_export-helper-Bcf8XuLU.js"
+      "_AppLayout-CMzWDxoL.js",
+      "__plugin-vue_export-helper-DlAUqK2U.js"
     ],
     "css": [
       "assets/Index-tn0RQdqM.css"
     ]
   },
   "resources/js/Pages/Calendar/Today.vue": {
-    "file": "assets/Today-CezslWLv.js",
+    "file": "assets/Today-Du996QKH.js",
     "name": "Today",
     "src": "resources/js/Pages/Calendar/Today.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "__plugin-vue_export-helper-Bcf8XuLU.js",
-      "_SeoHead-Cgu0a67g.js"
+      "_AppLayout-CMzWDxoL.js",
+      "_SeoHead-CiZR7-Fx.js",
+      "__plugin-vue_export-helper-DlAUqK2U.js"
     ],
     "css": [
       "assets/Index-tn0RQdqM.css"
     ]
   },
   "resources/js/Pages/Direction/Index.vue": {
-    "file": "assets/Index-B8uZ6Ftm.js",
+    "file": "assets/Index-Dkuf951p.js",
     "name": "Index",
     "src": "resources/js/Pages/Direction/Index.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "__plugin-vue_export-helper-Bcf8XuLU.js",
-      "_LunarSolarDatePicker-IuqQ9OLq.js",
-      "_SeoHead-Cgu0a67g.js"
+      "_AppLayout-CMzWDxoL.js",
+      "_LunarSolarDatePicker-BltjoF3H.js",
+      "_SeoHead-CiZR7-Fx.js",
+      "__plugin-vue_export-helper-DlAUqK2U.js"
     ],
     "css": [
       "assets/Index-DHJB5dyX.css"
     ]
   },
+  "resources/js/Pages/Feedback/Create.vue": {
+    "file": "assets/Create-yP8bJrOC.js",
+    "name": "Create",
+    "src": "resources/js/Pages/Feedback/Create.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js",
+      "_AppLayout-CMzWDxoL.js"
+    ]
+  },
+  "resources/js/Pages/Feedback/Thanks.vue": {
+    "file": "assets/Thanks-Cet8mHlx.js",
+    "name": "Thanks",
+    "src": "resources/js/Pages/Feedback/Thanks.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js",
+      "_AppLayout-CMzWDxoL.js"
+    ]
+  },
   "resources/js/Pages/GoodDays/Index.vue": {
-    "file": "assets/Index-CDues5E5.js",
+    "file": "assets/Index-DqvD3l9w.js",
     "name": "Index",
     "src": "resources/js/Pages/GoodDays/Index.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "__plugin-vue_export-helper-Bcf8XuLU.js",
-      "_SeoHead-Cgu0a67g.js"
+      "_AppLayout-CMzWDxoL.js",
+      "_SeoHead-CiZR7-Fx.js",
+      "__plugin-vue_export-helper-DlAUqK2U.js"
     ],
     "css": [
       "assets/Index-tn0RQdqM.css"
     ]
   },
   "resources/js/Pages/Home.vue": {
-    "file": "assets/Home-1CjQWfs_.js",
+    "file": "assets/Home-CyqS_--W.js",
     "name": "Home",
     "src": "resources/js/Pages/Home.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "__plugin-vue_export-helper-Bcf8XuLU.js",
-      "_LunarSolarDatePicker-IuqQ9OLq.js",
-      "_SeoHead-Cgu0a67g.js"
+      "_AppLayout-CMzWDxoL.js",
+      "_LunarSolarDatePicker-BltjoF3H.js",
+      "_SeoHead-CiZR7-Fx.js",
+      "__plugin-vue_export-helper-DlAUqK2U.js"
     ],
     "css": [
       "assets/Index-tn0RQdqM.css"
     ]
   },
   "resources/js/Pages/Naming/Index.vue": {
-    "file": "assets/Index-BfINVKSk.js",
+    "file": "assets/Index-CP8EBIKm.js",
     "name": "Index",
     "src": "resources/js/Pages/Naming/Index.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "__plugin-vue_export-helper-Bcf8XuLU.js",
-      "_SeoHead-Cgu0a67g.js"
+      "_AppLayout-CMzWDxoL.js",
+      "_SeoHead-CiZR7-Fx.js",
+      "__plugin-vue_export-helper-DlAUqK2U.js"
     ],
     "css": [
       "assets/Index-DMXnpuck.css"
     ]
   },
   "resources/js/Pages/Prayers/Index.vue": {
-    "file": "assets/Index-Bn0dqDcQ.js",
+    "file": "assets/Index-CJZrddyP.js",
     "name": "Index",
     "src": "resources/js/Pages/Prayers/Index.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "__plugin-vue_export-helper-Bcf8XuLU.js",
-      "_SeoHead-Cgu0a67g.js"
+      "_AppLayout-CMzWDxoL.js",
+      "_SeoHead-CiZR7-Fx.js",
+      "__plugin-vue_export-helper-DlAUqK2U.js"
     ],
     "css": [
       "assets/Index-BMoy9s4-.css"
     ]
   },
   "resources/js/Pages/Prayers/Show.vue": {
-    "file": "assets/Show-sdRmq7pU.js",
+    "file": "assets/Show-BMaoNt1h.js",
     "name": "Show",
     "src": "resources/js/Pages/Prayers/Show.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "__plugin-vue_export-helper-Bcf8XuLU.js",
-      "_SeoHead-Cgu0a67g.js"
+      "_AppLayout-CMzWDxoL.js",
+      "_SeoHead-CiZR7-Fx.js",
+      "__plugin-vue_export-helper-DlAUqK2U.js"
     ],
     "css": [
       "assets/Show-BpgWtQBK.css"
     ]
   },
   "resources/js/Pages/TraNgayTot.vue": {
-    "file": "assets/TraNgayTot-5f9RWSO6.js",
+    "file": "assets/TraNgayTot-DD7JIrLp.js",
     "name": "TraNgayTot",
     "src": "resources/js/Pages/TraNgayTot.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "__plugin-vue_export-helper-Bcf8XuLU.js",
-      "_LunarSolarDatePicker-IuqQ9OLq.js"
+      "_AppLayout-CMzWDxoL.js",
+      "_LunarSolarDatePicker-BltjoF3H.js",
+      "__plugin-vue_export-helper-DlAUqK2U.js"
     ],
     "css": [
       "assets/Index-tn0RQdqM.css"
     ]
   },
   "resources/js/Pages/TuVi/Index.vue": {
-    "file": "assets/Index-BpV5Zm4v.js",
+    "file": "assets/Index-l2XzN7KQ.js",
     "name": "Index",
     "src": "resources/js/Pages/TuVi/Index.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_SeoHead-Cgu0a67g.js",
-      "__plugin-vue_export-helper-Bcf8XuLU.js",
-      "_LunarSolarDatePicker-IuqQ9OLq.js"
+      "_SeoHead-CiZR7-Fx.js",
+      "_AppLayout-CMzWDxoL.js",
+      "_LunarSolarDatePicker-BltjoF3H.js",
+      "__plugin-vue_export-helper-DlAUqK2U.js"
     ],
     "css": [
       "assets/Index-Tetb93Zw.css"
     ]
   },
   "resources/js/Pages/Wedding/Index.vue": {
-    "file": "assets/Index-BPIesBiJ.js",
+    "file": "assets/Index-CCy1uQdy.js",
     "name": "Index",
     "src": "resources/js/Pages/Wedding/Index.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "__plugin-vue_export-helper-Bcf8XuLU.js",
-      "_LunarSolarDatePicker-IuqQ9OLq.js",
-      "_SeoHead-Cgu0a67g.js"
+      "_AppLayout-CMzWDxoL.js",
+      "_LunarSolarDatePicker-BltjoF3H.js",
+      "_SeoHead-CiZR7-Fx.js",
+      "__plugin-vue_export-helper-DlAUqK2U.js"
     ],
     "css": [
       "assets/Index-tn0RQdqM.css"
     ]
   },
   "resources/js/app.js": {
-    "file": "assets/app-CfP6xHMK.js",
+    "file": "assets/app-4BQYZtGP.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
     "dynamicImports": [
+      "resources/js/Pages/Admin/Analytics/Index.vue",
+      "resources/js/Pages/Admin/Feedbacks/Index.vue",
       "resources/js/Pages/Age/Index.vue",
       "resources/js/Pages/Age/Result.vue",
       "resources/js/Pages/Calendar/Today.vue",
       "resources/js/Pages/Direction/Index.vue",
+      "resources/js/Pages/Feedback/Create.vue",
+      "resources/js/Pages/Feedback/Thanks.vue",
       "resources/js/Pages/GoodDays/Index.vue",
       "resources/js/Pages/Home.vue",
       "resources/js/Pages/Naming/Index.vue",
@@ -220,7 +280,7 @@
       "resources/js/Pages/Wedding/Index.vue"
     ],
     "css": [
-      "assets/app-CF_oijKk.css"
+      "assets/app-CeaHSqpR.css"
     ]
   }
 }

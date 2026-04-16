@@ -6,6 +6,9 @@ use App\Http\Controllers\CalendarController;
 use App\Http\Controllers\BabyNamingController;
 use App\Http\Controllers\CompatibilityController;
 use App\Http\Controllers\GoodDayController;
+use App\Http\Controllers\Admin\AnalyticsController;
+use App\Http\Controllers\Admin\FeedbacksController as AdminFeedbacksController;
+use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\HouseDirectionController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PrayerController;
@@ -34,3 +37,11 @@ Route::post('/dat-ten-cho-con/ket-qua', [BabyNamingController::class, 'result'])
 Route::get('/van-khan', [PrayerController::class, 'index'])->name('prayers.index');
 Route::get('/van-khan/{slug}/pdf', [PrayerController::class, 'exportPdf'])->name('prayers.pdf');
 Route::get('/van-khan/{slug}', [PrayerController::class, 'show'])->name('prayers.show');
+Route::get('/gop-y', [FeedbackController::class, 'create'])->name('feedback.create');
+Route::post('/gop-y', [FeedbackController::class, 'store'])->middleware('throttle:10,1')->name('feedback.store');
+Route::get('/gop-y/cam-on', [FeedbackController::class, 'thanks'])->name('feedback.thanks');
+
+Route::prefix('admin')->group(function () {
+    Route::get('/analytics', [AnalyticsController::class, 'index'])->name('admin.analytics');
+    Route::get('/feedbacks', [AdminFeedbacksController::class, 'index'])->name('admin.feedbacks');
+});
